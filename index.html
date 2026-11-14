@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ai_factory · ผลหาข้อมูล 4 เรื่อง (law ตรวจแล้ว)</title>
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--ink:#1f2328;--mute:#5d646d;--line:#e4e0d8;--accent:#0f6e6e;--warn:#9a5b00;--bad:#a12d2d;--ok:#2d7a3a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"Sukhumvit Set","Noto Sans Thai",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:1.6rem;margin:.2rem 0}h2{font-size:1.25rem;margin:2.2rem 0 .6rem;border-bottom:2px solid var(--line);padding-bottom:.3rem}
+h3{font-size:1.02rem;margin:1.1rem 0 .3rem}
+.sub{color:var(--mute);margin:0 0 1rem}.tag{display:inline-block;font-size:.78rem;padding:2px 8px;border-radius:99px;background:#e3f3e6;color:var(--ok);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+.big{font-size:1.05rem}.key{border-left:4px solid var(--accent)}.alert{border-left:4px solid var(--warn)}.stop{border-left:4px solid var(--bad)}
+table{width:100%;border-collapse:collapse;font-size:.92rem}th,td{text-align:left;vertical-align:top;padding:8px 6px;border-bottom:1px solid var(--line)}th{color:var(--mute);font-weight:600}
+ul{padding-left:1.2rem;margin:.3rem 0}li{margin:.25rem 0}
+.ok{color:var(--ok);font-weight:600}.warn{color:var(--warn);font-weight:600}.bad{color:var(--bad);font-weight:600}
+small{color:var(--mute)}.pill{display:inline-block;font-size:.75rem;padding:1px 7px;border-radius:99px;background:#eef1f4;color:var(--mute)}
+.answer{background:#0f6e6e;color:#fff;border-radius:12px;padding:16px 18px;margin-top:18px}
+</style>
+</head>
+<body><main>
+<span class="tag">law ตรวจครบ 4 เรื่อง · ผ่าน (มีข้อแก้)</span>
+<h1>ai_factory · ผลหาข้อมูลก่อนสร้างโรงงานคลิป</h1>
+<p class="sub">โปรเจกต์ W-56 · ค้นโดย vegapunk 4 ตัวพร้อมกัน · law ตรวจทุกข้อกับหน้าเว็บทางการ · 14 พ.ย. 2026 · ตัวเลขความเร็วทั้งหมดเป็นค่าประมาณ จนกว่าจะวัดจริงบน PC ในเฟส 5</p>
+
+<h2>สรุป 5 บรรทัด</h2>
+<div class="card key big"><ul>
+<li><b>โมเดลวิดีโอ:</b> ใช้ <b>Wan 2.2</b> เป็นหลัก · เป็นตระกูลเดียวที่ license สะอาด (Apache-2.0) และใส่การ์ด 12 GB ได้</li>
+<li><b>TikTok / Shopee อนุญาตคลิป AI ขายของ</b> · แต่ต้องเปิดป้าย AI · สินค้าต้องตรงของจริง · ห้ามคลิปซ้ำๆ จำนวนมาก</li>
+<li><b>กฎหมายไทย (สคบ.):</b> ต้องขึ้นข้อความบนจอว่าภาพหรือคลิปสร้าง/แต่งด้วย AI</li>
+<li><b>Veo ซื้อผ่าน Gemini API ไม่ได้แล้ว:</b> ทางเลือกคือ Gemini Omni (~2.4 บาท/วินาที) หรือ Veo บน Google Cloud</li>
+<li><b>PC:</b> ถ้าใช้ทำงานนี้อย่างเดียว ลง Ubuntu ดีที่สุด · ถ้ายังต้องใช้ Windows ก็ใช้ Windows ได้</li>
+</ul></div>
+
+<h2>1 · โมเดลวิดีโอ local บน RTX 5070 12 GB</h2>
+<div class="card"><table>
+<tr><th>โมเดล</th><th>ใส่ 12 GB ได้ไหม</th><th>license</th><th>สรุป</th></tr>
+<tr><td><b>Wan 2.2 5B</b></td><td class="ok">ได้</td><td class="ok">Apache-2.0 สะอาด</td><td>ตัวตั้งต้น ทดสอบก่อน</td></tr>
+<tr><td><b>Wan 2.2 14B</b> (ไฟล์บีบอัด GGUF)</td><td class="ok">ได้ ต้องใช้ RAM ช่วย</td><td class="ok">Apache-2.0 สะอาด</td><td>สร้างวิดีโอจากรูปดีที่สุด · มีคนใช้ 5070 รายงาน ~12 นาที ต่อคลิป 720p 5 วินาที (แบบเร่ง)</td></tr>
+<tr><td>HunyuanVideo 1.5</td><td class="warn">น่าจะได้</td><td class="bad">Tencent · ห้ามแสดงผลงานใน EU/UK/เกาหลี</td><td>รอพี่ตัดสินเรื่องความเสี่ยง license</td></tr>
+<tr><td>Kandinsky 6 Lite</td><td class="warn">ยังไม่รู้</td><td class="bad">โค้ด MIT แต่ VAE เป็นของ Tencent (law เทียบไฟล์แล้วตรงกันทุกไบต์) · ส่วนเสียงอาจห้ามใช้เชิงพาณิชย์</td><td>รอตรวจเพิ่ม + รอพี่ตัดสิน</td></tr>
+<tr><td>LTX-2.3 / 2.5</td><td class="warn">ต่ำกว่าสเปกผู้ผลิต (16–32 GB)</td><td class="warn">ฟรีถ้ารายได้ไม่ถึง $10M · ต้องบอกว่าเป็น AI</td><td>ทดสอบท้ายสุด</td></tr>
+<tr><td>MiniMax H3</td><td class="bad">ไม่ได้</td><td class="bad">ห้ามใช้ใน US/EU/UK/เกาหลี</td><td>ตัดทิ้ง</td></tr>
+</table>
+<ul>
+<li><b>ความเร็ว:</b> คิดเป็น "นาทีต่อช็อต" · คลิปละ 1–2 ช็อต AI ใช้ราว 3–15 นาทีต่อช็อต · วันละ 30 คลิปต้องรันข้ามคืน</li>
+<li><b>ยังตอบไม่ได้จากเอกสาร:</b> สินค้าในคลิปจะเหมือนจริงแค่ไหน (โลโก้ ตัวหนังสือ เม็ดหิน) · ต้องทดสอบด้วยรูปสินค้า viora จริงในเฟส 5</li>
+<li><b>บน Windows:</b> ระวังตัวเร่ง SageAttention ทำคลิปออกมาเป็นจอดำกับบางโมเดล · ให้รันแบบปกติก่อน ค่อยเปิดตัวเร่ง</li>
+</ul></div>
+
+<h2>2 · กฎคลิป AI ของ TikTok และ Shopee</h2>
+<div class="card"><h3>ทำได้ ถ้าทำตามนี้</h3><ul>
+<li><b>เปิดป้าย AI ทุกครั้ง:</b>
+  <ul><li>TikTok Shop ไทยไม่ติดป้าย: หักคะแนนสุขภาพบัญชีได้ถึง 20 คะแนน (บัญชีใหม่เริ่มที่ 200 · เหลือ ≤150 = โพสต์คลิปขายของไม่ได้ 3 วัน)</li>
+  <li>Shopee ไทย: ข้อตกลง AI ของ Shopee ไทยเขียนชัดว่าคอนเทนต์ AI จากเครื่องมือภายนอก "จะต้องระบุว่าเป็นเนื้อหาที่สร้างโดย AI"</li>
+  <li>Shopee (หน้าสิงคโปร์): ไม่เปิดป้าย = หัก 12 คะแนน + ลบคลิป</li></ul></li>
+<li><b>สินค้าในคลิปต้องตรงหน้าร้านทุกจุด:</b> สี ขนาด วัสดุ รูปทรง น้ำหนัก · TikTok เขียนว่า "ต่างนิดเดียวก็นับเป็นการทำผิด"</li>
+<li><b>ห้าม:</b> ภาพก่อน–หลัง · เรื่องดราม่าหรือเหตุฉุกเฉินปลอมเพื่อเร่งขาย · รีวิวปลอม · หมอ ผู้เชี่ยวชาญ หรือคนดังที่ AI สร้าง (TikTok เขียนชัด · Shopee ห้ามการหลอกลวงโดยรวม)</li>
+</ul></div>
+<div class="card alert"><h3>⚠️ ความเสี่ยงหลักของโรงงาน: จำนวนคลิป</h3>
+<p>TikTok Shop ไทย: โพสต์คลิปไม่มีปฏิสัมพันธ์ หลอกลวง หรือซ้ำซาก ตั้งแต่ <b>5 คลิปใน 7 วัน</b> → โพสต์คลิปขายของได้แค่ <b>7 คลิปใน 7 วันถัดไป</b> และคลิปเกินจากนั้นจะไม่มีลิงก์สินค้า · หน้านโยบายระบุชื่อ "ใช้เสียง TTS ทั่วไปมากเกินไปโดยไม่มีครีเอเตอร์มีส่วนร่วม" และ "คลิป AI จำนวนมาก" ไว้ตรงๆ</p>
+<p><b>ความหมาย:</b> เป้า "วันละ 30 คลิป" ต้องคิดใหม่เป็น <b>ต่อบัญชี และต้องหลากหลาย</b> · คนเขียนหรือแก้บททุกคลิป · ไม่ทำคลิปหน้าตาเดียวกันแค่เปลี่ยนราคา</p></div>
+<div class="card"><h3>กฎหมายไทย (สคบ.)</h3>
+<p>law เจอ <b>ประกาศข่าวทางการของ สคบ. (27 ก.ค. 2568)</b> เรื่องแนวทางโฆษณาที่อาจทำให้เข้าใจผิด ตาม พ.ร.บ.คุ้มครองผู้บริโภค 2522 · ข้อที่เกี่ยวกับ AI:</p>
+<ul><li>ขนาด ปริมาณ จำนวน ส่วนประกอบสินค้าในภาพต้องตรงความจริง</li>
+<li>ต้องระบุชัดเจนว่าภาพหรือคลิปถูกสร้างหรือแต่ง เช่น <b>"ภาพจำลองโดยใช้ปัญญาประดิษฐ์ (AI)"</b> · <b>"ภาพเคลื่อนไหวสร้างโดย AI"</b> · <b>"ภาพถ่ายจริง หรือปรับแต่งด้วย AI"</b> · อ่านได้หรือฟังได้ชัด</li></ul>
+<small>ยังไม่เจอตัวประกาศฉบับเต็มในราชกิจจาฯ · ยังไม่ชัดว่าครอบคลุม affiliate ไหม · โรงงานควรใส่ข้อความนี้ทุกคลิปที่มีภาพ AI ไว้ก่อน</small></div>
+<div class="card stop"><h3>โพสต์อัตโนมัติ: ไม่ควรทำ</h3><ul>
+<li><b>TikTok:</b> หลักเกณฑ์ API ยกตัวอย่างชัดว่า "เครื่องมือช่วยอัปโหลดคอนเทนต์ไปยังบัญชีที่คุณหรือทีมดูแล" = <b>ไม่ผ่านการอนุมัติ</b> · ถ้าไม่ผ่าน บัญชีที่โพสต์ต้องตั้งเป็นส่วนตัวทั้งบัญชี</li>
+<li><b>Shopee:</b> ไม่มี API โพสต์ Shopee Video · และข้อตกลงห้ามใช้ script อัตโนมัติ</li>
+<li><b>ทางที่ใช้ได้:</b> โรงงานส่งออกคลิป + แคปชั่น + checklist ป้าย AI → <b>คนกดโพสต์เองในแอป</b> (ตรงกับกฎ "คนอนุมัติทุกคลิป" อยู่แล้ว)</li></ul></div>
+
+<h2>3 · Veo และช็อตพรีเมียมแบบจ่ายเงิน</h2>
+<div class="card"><ul>
+<li><b>Veo ผ่าน Gemini API ปิดแล้ว (22 ต.ค. 2026)</b> · ราคาใน KB เดิมใช้ไม่ได้แล้ว</li>
+<li><b>ทาง 1 · Gemini Omni 1.2 Flash (Gemini API):</b> 720p มีเสียง ~$0.07/วินาที (~2.4 บาท) · ยาว 3–15 วินาที · แนวตั้ง 9:16 · ใส่รูปอ้างอิงได้ 6 รูป · <span class="warn">ไม่มีประกันลิขสิทธิ์จาก Google</span></li>
+<li><b>ทาง 2 · Veo 3.1 บน Google Cloud:</b> $0.03–0.60/วินาทีตามรุ่น · ประมวลผลที่สหรัฐฯ · prompt ภาษาอังกฤษ · law ตีความว่าจ่ายตามใช้ได้ (ต้องลองเรียกจริง 1 ครั้งยืนยัน) · <span class="ok">Veo 3.1 / Fast มีประกันลิขสิทธิ์</span> (ยกเว้นเรื่องเครื่องหมายการค้า) · Veo Lite ไม่มี</li>
+</ul>
+<table><tr><th>ช็อตเสริม 16 วินาที/คลิป</th><th>ต่อคลิป</th><th>ทุกคลิป วันละ 30 (ต่อเดือน)</th></tr>
+<tr><td>Omni 360p</td><td>~13 บาท</td><td>~11,000 บาท</td></tr>
+<tr><td>Omni 720p</td><td>~38 บาท</td><td>~34,000 บาท</td></tr>
+<tr><td>Veo 3.1 Lite 720p (ไม่มีเสียง)</td><td>~16 บาท</td><td>~15,000 บาท</td></tr>
+<tr><td>Veo 3.1 Fast 720p (ไม่มีเสียง)</td><td>~43 บาท</td><td>~39,000 บาท</td></tr>
+<tr><td>Veo 3.1 1080p มีเสียง</td><td>~217 บาท</td><td>~195,000 บาท</td></tr></table>
+<small>อัตรา 33.9 บาท/USD (ECB 13 พ.ย.) · ครั้งเดียวไม่นับถ่ายซ้ำ · ใช้เฉพาะบางคลิป เช่น วันละ 5 คลิป × 8 วินาที บน Veo Fast ≈ 3,300 บาท/เดือน · โรงงานใส่เสียงไทยเอง (iApp) จึงใช้แบบ "ไม่มีเสียง" ได้</small></div>
+
+<h2>4 · PC ควรลง Linux ไหม</h2>
+<div class="card"><table>
+<tr><th></th><th>Windows 11</th><th>Ubuntu</th></tr>
+<tr><td>ไดรเวอร์ / CUDA สำหรับ RTX 5070</td><td class="ok">ได้</td><td class="ok">ได้ (Secure Boot เปิดได้)</td></tr>
+<tr><td>ตัวเร่งความเร็ว</td><td class="warn">ต้องพึ่งของชุมชน · วิธีแก้ปัญหาบางอย่างต้องปิดการใช้ RAM ช่วย ซึ่งการ์ด 12 GB ต้องใช้</td><td class="ok">มีของทางการครบ</td></tr>
+<tr><td>RAM ช่วยการ์ดจอ (ComfyUI)</td><td>ไม่เกิน ~26 GB</td><td class="ok">~48–57 GB</td></tr>
+<tr><td>ความเร็ว</td><td colspan="2">Linux เร็วกว่าเล็กน้อย (~5–6% · บาง test "ใกล้เคียงกัน") · ไม่ใช่ตัวตัดสิน</td></tr>
+<tr><td>เปิดผลิตข้ามคืน</td><td class="warn">ค่าเริ่มต้นรีสตาร์ทเองนอกเวลาที่ตั้งไว้ · ตั้งให้แจ้งก่อนหรือเลื่อนได้ แต่จะไม่ได้แพตช์ความปลอดภัยอัตโนมัติ</td><td class="ok">ไม่รีสตาร์ทเองโดยค่าเริ่มต้น · ต้องล็อกไดรเวอร์<b>และเคอร์เนลพร้อมกัน</b></td></tr>
+</table>
+<ul><li><b>ใช้ PC ทำงานนี้อย่างเดียว:</b> → <b>Ubuntu</b></li>
+<li><b>ยังต้องใช้เป็น Windows:</b> → <b>Windows ปกติ</b> (WSL2 เป็นทางรอง · dual boot ไม่แนะนำสำหรับเปิดผลิตตลอด)</li>
+<li><b>เฟส 1</b> มีรายการเช็ค 13 ข้อ (ดิสก์ · BitLocker · ใครใช้เครื่อง · ไฟล์ที่ต้องเก็บ) ไว้ช่วยตัดสินใจ</li></ul></div>
+
+<h2>สิ่งที่ต้องให้พี่ตัดสิน</h2>
+<div class="card key"><table>
+<tr><th>#</th><th>เรื่อง</th><th>ข้อเสนอ</th></tr>
+<tr><td>1</td><td>PC ยังใช้เป็น Windows ปกติ หรือมีไฟล์สำคัญไหม</td><td>ตอบหลังเฟส 1 ก็ได้</td></tr>
+<tr><td>2</td><td>รับความเสี่ยง license ของ Tencent (HunyuanVideo / Kandinsky) ไหม</td><td class="ok">ไม่รับ · ใช้ Wan 2.2 อย่างเดียวไปก่อน</td></tr>
+<tr><td>3</td><td>เป้าจำนวนคลิป: คิดใหม่เป็นต่อบัญชีและต้องหลากหลาย</td><td class="ok">ใช่ · ตั้งตัวเลขหลังทดสอบโพสต์จริง</td></tr>
+<tr><td>4</td><td>ลองเรียก Veo บน Google Cloud 1 ครั้ง (ต้องมีบัญชีผูกบัตร)</td><td>ไว้ทีหลัง ตอนจะใช้ช็อตพรีเมียมจริง</td></tr>
+<tr><td>5</td><td>ให้ luffy เปิดหน้าเว็บ Shopee/TikTok ที่ระบบอ่านไม่ได้ ใน Chrome (อ่านอย่างเดียว)</td><td class="ok">เปิดเฉพาะ 6 หน้าที่ไม่ต้องล็อกอิน</td></tr>
+</table></div>
+
+<div class="answer">ตอบกลับได้แบบนี้: <b>"ตามแนะนำ"</b> หรือแก้เฉพาะข้อ · ขั้นต่อไปคือเฟส 1 ตรวจเครื่อง PC เมื่อพี่กลับบ้านเปิด SSH</div>
+
+<p><small>ไฟล์ผลค้นและผลตรวจของ law ทั้ง 8 ไฟล์: x-files/ai_factory/research/ · แผน: notes/90_plans/plan-2026-11-14-ai-factory-research.md · บันทึก KB โดย robin</small></p>
+</main></body></html>
